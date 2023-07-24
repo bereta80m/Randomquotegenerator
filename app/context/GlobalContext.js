@@ -9,7 +9,7 @@ function GlobalProvider({ children }) {
     const [randomQuote, setRandomQuote] = useState([])
     const GetMyQuotes =async ()=>{
         try {
-            const {data} = await axios.get("http://localhost:3000/api/GetQuotes")
+            const {data} = await axios.get("https://randomquotegenerator-loa9d1myh-bereta80m.vercel.app/api/GetQuotes")
             const ListRandom = Math.floor(Math.random() * data.data.length)
             setAllQuotes(data.data)
             setRandomQuote(data.data[ListRandom])
