@@ -22,7 +22,7 @@ function Quotes({ params }) {
         </div>
       {FiltroAll.map((item) => {
         return (
-          <div className="lg:w-1/3 md:w-1/3  border-l-8 border-[#f7df94] lg:pl-16 md:pl-16 sm:px-10 xs:px-20 xxs:px-20">
+          <div key={item._id} className="lg:w-1/3 md:w-1/3  border-l-8 border-[#f7df94] lg:pl-16 md:pl-16 sm:px-10 xs:px-20 xxs:px-20">
             <p className="text-2xl font-semibold font-serif">
               "{item.quoteText}"
             </p>
